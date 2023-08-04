@@ -1,0 +1,13 @@
+.contenedor {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+
+.inputs input{
+    border-radius: 10px;
+}
