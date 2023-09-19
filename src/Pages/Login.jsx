@@ -17,13 +17,12 @@ function Login() {
       password: password,
     };
 
-    let resp; // Declara resp aquí
-
-    // Consumo de Servicio Login
+    let resp;
+    
     await axios
       .post("http://89.116.25.43:3500/api/login", data)
       .then((response) => {
-        resp = response; // Asigna el valor de response a resp
+        resp = response;
         localStorage.setItem("token", response.data.jwt);
         localStorage.setItem("user", JSON.stringify(response.data.user));
         navigate("/dashboard");
@@ -37,8 +36,7 @@ function Login() {
         }
       });
 
-    // Ahora puedes usar resp fuera de la función .then()
-    console.log(resp); // Esto funcionará sin errores
+    console.log(resp); 
   };
 
   return (

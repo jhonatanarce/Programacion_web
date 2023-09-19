@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "../Styles/productos.css";
 import ProductItem from "./ProductItem";
 import axios from "axios";
+import '../Styles/dashboard.css'
 
 function Dashboard() {
   const [productos, setProductos] = useState([]);
