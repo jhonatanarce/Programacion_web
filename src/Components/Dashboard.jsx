@@ -22,7 +22,7 @@ function Dashboard() {
         },
       })
       .then((response) => {
-        setProductos(response.data);
+        setProductos(response.data.result);
         setLoading(false);
       })
       .catch((error) => {
